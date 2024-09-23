@@ -1,0 +1,670 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* body{
+    overflow-x: hidden;
+} */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: rgb(24, 25, 25);
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    font-family: "Kanit", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+}
+.navbar article{
+    display: flex;
+    margin-left: 60px;
+    margin-right: 40px;
+}
+.navbar article div{
+    margin: 25px;
+}
+.navbar article div a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.navbar article div a:hover{
+    text-decoration: none;
+    color: orangered;
+}
+
+.navbar .div1{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: orangered;
+
+}
+.navbar .div1:hover{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+}
+
+.navbar .div2{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.navbar .div3{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}.navbar .div4{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.navbar #icon{
+    color: yellow;
+}
+.navbar .div5{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: -20px;
+}
+.navbar .div6{
+    padding-top: 10px;
+}
+.navbar .div7{
+    padding-top: 10px;
+}
+.navbar .div8{
+    padding-top: 10px;
+}
+/* <!--==================hero page =====================  --> */
+
+#hero{
+    background-image: url(./img4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-family: "Kanit", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+}
+#hero .img1{
+    padding-top: 200px;
+    padding-left: 70px;
+}
+#hero .p1{
+    color: white;
+    font-size: 15px;
+    margin-top: -10px;
+    margin-left: 80px;
+    opacity: 0.7;
+}
+#hero .p2{
+    color: white;
+    font-size: 18px;
+    margin-top: 8px;
+    margin-left: 80px;
+    opacity: 0.8;
+}
+#hero .btn{
+    margin-top: 70px;
+    margin-left: 80px;
+}
+#hero .btn a{
+     text-decoration: none;
+     color: black;
+     background-color: orangered;
+     padding: 10px;
+}
+#hero .btn a:hover{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(231, 99, 52);
+    padding: 10px;
+}
+#hero .btn2{
+    margin-top: -24px;
+    margin-left: 280px;
+}
+#hero .btn2 a{
+    border: 2px solid orangered;
+    padding: 8px 12px 8px 12px;
+    text-decoration: none;
+    color: orangered;
+}
+#hero .btn2 a:hover{
+    border: 2px solid  rgb(231, 99, 52);
+    padding: 8px 12px 8px 12px;
+    text-decoration: none;
+    color:  rgb(231, 99, 52);
+}
+#hero .h1{
+    font-size: 30px;
+    margin-top: 140px;
+    margin-left: 25px;
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+}
+#hero .h2{
+    font-size: 17px;
+    margin-top: 10px;
+    margin-left: 25px;
+    color: white;
+    opacity: 0.8;
+    font-family: "Kanit", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+}
+/* <!-- ====================second page====================== --> */
+#second{
+    background-color: black;
+    box-shadow: 0px 0px 500px black;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+}
+#second {
+    padding: 100px 0px 130px 25px;
+}
+
+/* ===============first image============ */
+#second .ar1{
+    background-image: url("./image1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    height: 390px;
+    width: 270px;
+    box-shadow: 0px 0px 10px 1px white;
+}
+
+#second .ar1 .in1{
+    background-color: black;
+    opacity: 0;
+}
+#second .ar1 .in1:hover{
+    background-color: black;
+    opacity: 0.9;
+    transition: all 0.5s;
+}
+#second .ar1 .in1 .h1{
+    color: white;
+    margin-left: 5px;
+}
+#second .ar1 .in1 .h2{
+    color: white;
+    margin-left: 5px;
+}
+#second .ar1 .in1 .p1{
+    color: white;
+    opacity: 0.7;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#second .ar1 .in1 .p2{
+    color: white;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+#second .div1 a{
+    color: orangered;
+    margin: 7px;
+    font-size: 20px;
+}
+#second .ar1 .in1 .div1{
+    margin-top: 150px;
+}
+/* ===============first image============ */
+
+/* ===============second image============ */
+#second .ar2{
+    background-image: url("./image2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    height: 390px;
+    width: 270px;
+    box-shadow: 0px 0px 10px 1px white;
+}
+#second .ar2 .in2{
+    background-color: black;
+    opacity: 0;
+}
+#second .ar2 .in2:hover{
+    background-color: black;
+    opacity: 0.9;
+    transition: all 0.5s;
+}
+#second .ar2 .in2 .h1{
+    color: white;
+    margin-left: 5px;
+}
+#second .ar2 .in2 .h2{
+    color: white;
+    margin-left: 5px;
+}
+#second .ar2 .in2 .p1{
+    color: white;
+    opacity: 0.7;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#second .ar2 .in2 .p2{
+    color: white;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+#second .div1 a{
+    color: orangered;
+    margin: 7px;
+    font-size: 20px;
+}
+#second .ar2 .in2 .div1{
+    margin-top: 150px;
+}
+/* ===============second image============ */
+
+/* ===============third image============ */
+#second .ar3{
+    background-image: url("./image3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    height: 390px;
+    width: 270px;
+    box-shadow: 0px 0px 10px 1px white;
+}
+#second .ar3 .in3{
+    background-color: black;
+    opacity: 0;
+}
+#second .ar3 .in3:hover{
+    background-color: black;
+    opacity: 0.9;
+    transition: all 0.5s;
+}
+#second .ar3 .in3 .h1{
+    color: white;
+    margin-left: 5px;
+}
+#second .ar3 .in3 .h2{
+    color: white;
+    margin-left: 5px;
+}
+#second .ar3 .in3 .p1{
+    color: white;
+    opacity: 0.7;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#second .ar3 .in3 .p2{
+    color: white;
+    margin-left: 5px;
+}
+#second .div1 a{
+    color: orangered;
+    margin: 7px;
+    font-size: 20px;
+}
+#second .ar3 .in3 .div1{
+    margin-top: 137px;
+}
+/* ===============third image============ */
+
+/* ===============forth image============ */
+
+#second .ar4{
+    background-image: url("./image4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    height: 390px;
+    width: 270px;
+    box-shadow: 0px 0px 10px 1px white;
+}
+#second .ar4 .in4{
+    background-color: black;
+    opacity: 0;
+}
+#second .ar4 .in4:hover{
+    background-color: black;
+    opacity: 0.9;
+    transition: all 0.5s;
+}
+#second .ar4 .in4 .h1{
+    color: white;
+    margin-left: 5px;
+}
+#second .ar4 .in4 .h2{
+    color: white;
+    margin-left: 5px;
+}
+#second .ar4 .in4 .p1{
+    color: white;
+    opacity: 0.7;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#second .ar4 .in4 .p2{
+    color: white;
+    margin-left: 5px;
+}
+#second .div1 a{
+    color: orangered;
+    margin: 7px;
+    font-size: 20px;
+}
+#second .ar4 .in4 .div1{
+    margin-top: 155px;
+}
+/* ===============forth image============ */
+
+/* ===============fifth image============ */
+#second .ar5{
+    background-image: url("./image5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    height: 390px;
+    width: 270px;
+    box-shadow: 0px 0px 10px 1px white;
+}
+#second .ar5 .in5{
+    background-color: black;
+    opacity: 0;
+}
+#second .ar5 .in5:hover{
+    background-color: black;
+    opacity: 0.9;
+    transition: all 0.5s;
+}
+#second .ar5 .in5 .h1{
+    color: white;
+    margin-left: 5px;
+}
+#second .ar5 .in5 .h2{
+    color: white;
+    margin-left: 5px;
+}
+#second .ar5 .in5 .p1{
+    color: white;
+    opacity: 0.7;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#second .ar5 .in5 .p2{
+    color: white;
+    margin-left: 5px;
+}
+#second .div1 a{
+    color: orangered;
+    margin: 7px;
+    font-size: 20px;
+}
+#second .ar5 .in5 .div1{
+    margin-top: 137px;
+}
+/* ===============fifth image============ */
+/* <!-- ====================second page====================== --> */
+
+/* <!-- ====================third page====================== --> */
+#third {
+    display: flex;
+    background-color: black;
+    color: white;  
+    padding: 0px 0px 100px 0px;
+    justify-content: space-evenly;  
+}
+#third .ar1{
+    padding-left: 60px;
+}
+#third .ar2{
+    padding-right: 60px;
+    padding-top: 80px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+#third .h1{
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+#third .h2{
+    font-size: 15px;
+    padding-bottom: 5px;
+    opacity: 0.7;
+}
+#third .p1{
+    font-size: 17px;
+}
+#third .btn{
+    margin-top: 30px;
+}
+#third .btn a{
+    text-decoration: none;
+    color: black;
+    background-color: orangered;
+    padding: 10px;
+}
+#third .btn a:hover{
+   text-decoration: none;
+   color: black;
+   background-color: rgb(231, 99, 52);
+   padding: 10px;
+}
+#third .btn2{
+    margin-left: 220px;
+    margin-top: -24px;
+}
+#third .btn2 a{
+    border: 2px solid orangered;
+    padding: 8px 12px 8px 12px;
+    text-decoration: none;
+    color: orangered;
+}
+#third .btn2 a:hover{
+    border: 2px solid  rgb(231, 99, 52);
+    padding: 8px 12px 8px 12px;
+    text-decoration: none;
+    color:  rgb(231, 99, 52);
+}
+/* <!-- ====================third page====================== --> */
+/* =========================forth page with slider================ */
+#h1{
+    font-size: 40px;
+    color: white;
+    background-color: black;
+    padding: 0px 0px 10px 100px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+}
+#h2{
+    font-size: 19px;
+    color: white;
+    background-color: black;
+    padding: 0px 0px 10px 100px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+}
+
+#forth{
+    /* overflow-x: hidden; */
+    width: 1600px;
+    padding-top: 30px;
+}
+#inner{
+    display: inline-flex;
+    animation-name: slider;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+#forth{
+    background-color: black;
+}
+#inner div img{
+    height: 400px;
+    width: 1515px;
+}
+#inner div{
+    height: 400px;
+    width: 1515px; 
+}
+#inner div img{
+    padding-right: 30px;
+    padding-bottom: 100px;
+}
+
+@keyframes slider{
+    0%{
+        margin-left: 0px;
+    }
+    15%{
+        margin-left: 0px;
+    }
+    20%{
+        margin-left: -1000px;
+    }
+    35%{
+        margin-left: -1000px;
+    }
+    40%{
+        margin-left: -2000px;
+    }
+    55%{
+        margin-left: -2000px;
+    }
+    60%{
+        margin-left: -3000px;
+    }
+    75%{
+        margin-left: -3000px;
+    }
+    80%{
+        margin-left: -4000px;
+    }
+    95%{
+        margin-left: -4000px;
+    }
+    100%{
+        margin-left: -5000px;
+    }
+}
+
+/* =================fifth page==================== */
+#fotter{
+    background-color: black;
+    font-family: "Kanit", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+}
+#fotter .img{
+    padding-left: 630px;
+}
+#fotter .p1{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+#fotter .btn{
+    padding-left: 700px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: black;
+}
+#fotter .btn a{
+    border: 2px solid orangered;
+    padding: 8px 12px 8px 12px;
+    text-decoration: none;
+    color: orangered;
+}
+#fotter .btn a:hover{
+    border: 2px solid  rgb(231, 99, 52);
+    padding: 8px 12px 8px 12px;
+    text-decoration: none;
+    color:  rgb(231, 99, 52);
+}
+/* =====================fotter page================= */
+#infotter {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+}
+#infotter .h1{
+    color: white;
+    font-size: 19px;
+}
+#infotter .h2{
+    color: white;
+    font-size: 19px;
+}
+#infotter .h3{
+    color: white;
+    font-size: 19px;
+}
+#infotter .h4{
+    color: white;
+    font-size: 19px;
+}
+#fotter #infotter article div{
+    margin: 10px;
+}
+#fotter #infotter article div a{
+    color: white;
+    text-decoration: none;
+    opacity: 0.9;
+    font-size: 17px;
+}
+#fotter #infotter article div a:hover{
+    color: orangered;
+    text-decoration: none;
+    opacity: 0.9;
+    font-size: 17px;
+    transition: all 0.3s;
+}
+#fotter #infotter .icon a{
+    color: yellow;
+    text-decoration: none;
+    opacity: 1;
+}
+#fotter #infotter .icon a:hover{
+    color: white;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+.end{
+   padding-bottom: 35px;
+}
+.line{
+    color: orangered;
+    margin-left: 40px;
+    font-size: 50px;
+    opacity: 0.3;
+}
+.end .last{
+    color: white;
+    padding: 30px 0px 0px 50px;
+    opacity: 0.5;
+    font-size: 20px;
+}
+/* =====================fotter page================= */

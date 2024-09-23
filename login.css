@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow-x: hidden;
+}
+
+.navbar{
+    background-color: rgb(24, 25, 25);
+    position: sticky;
+    top: 0px;
+    z-index: 20;
+    display: flex;
+    padding: 20px;
+}
+.navbar article{
+    display: flex;
+}
+.navbar .home a{
+    color: white;
+    padding-left: 20px;
+    padding-top: 50px;
+}
+.navbar .home a:hover{
+    color: orangered;
+    padding-left: 20px;
+    padding-top: 50px;
+}
+.navbar .div1{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 23px;
+    color: orangered;
+    margin-left: 600px;
+}
+.navbar .div1:hover{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 23px;
+    color: white;
+}
+
+/* ===========================hero====================== */
+
+#hero{
+    background-image: url("https://www.shutterstock.com/shutterstock/videos/1103443789/thumb/1.jpg?ip=x480");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    height: 130vh;
+    width: 100%;
+}
+#hero .h1{
+    color: white;
+    font-size: 40px;
+    padding-left: 610px;
+    padding-top: 120px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+#hero .form .h2{
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+}
+#hero .form{
+    background-color: rgb(35, 32, 32);
+    margin-left: 500px;
+    margin-right: 450px;
+    margin-top: 20px;
+    padding-top: 50px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+}
+#hero .form .info1{
+    padding-top: 40px;
+    padding-left: 105px;
+}
+#hero .form .info1 input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    color: orangered;
+    background-color: rgb(35, 32, 32);
+    font-size: 18px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+#hero .form .info2{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 55px;
+    padding-right: 60px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    font-family: "Kanit", sans-serif;
+    font-weight:200;
+    font-style: normal;
+}
+#hero .form .info2 input{
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    border: 1px solid orangered;
+}
+#hero .img{
+    margin-right: 950px;
+    margin-top: -420px;
+    margin-left: 360px;
+}
+#hero .img1{
+    margin-left: 908px;
+    margin-top: -509px;
+    margin-right: 400px;
+}
+#hero .btn{
+    margin-left: 720px;
+    margin-top: 340px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+#hero .btn a{
+    border: 2px solid orangered;
+    padding: 8px 12px 8px 12px;
+    text-decoration: none;
+    color: orangered;
+}
+#hero .btn a:hover{
+    border: 2px solid  rgb(231, 99, 52);
+    padding: 8px 12px 8px 12px;
+    text-decoration: none;
+    color:  rgb(231, 99, 52);
+}
+#hero .text{
+    color: white;
+    margin-left: 654px;
+    margin-top: 30px;
+}
+#hero .text a{
+    text-decoration: none;
+    color: orangered;
+}
+#hero .text2 a{
+    text-decoration: none;
+    color: white;
+}
+#hero .text2{
+    color: white;
+    margin-left: 580px;
+    margin-top: 100px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 0.7;
+}
+#hero .line{
+    color: orangered;
+    margin-left: 37px;
+    font-size: 55px;
+    font-weight: 700;
+    opacity: 0.3;
+    margin-top: -100px;
+}
+#hero .last{
+    color: white;
+    padding: 30px 0px 0px 85px;
+    opacity: 0.5;
+    font-size: 20px;
+}

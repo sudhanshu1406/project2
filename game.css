@@ -1,0 +1,178 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* <!-- ===============================navbar============================== --> */
+#navbar{
+    display: flex;
+    background-color: rgb(24, 25, 25);
+    position: sticky;
+    top: 0px;
+    justify-content: space-between;
+}
+#navbar article{
+    display: flex;
+}
+#navbar article div{
+    color: white;
+    margin: 20px;
+}
+#navbar article div a{
+    text-decoration: none;
+    color: white;
+}
+#navbar article div a:hover{
+    text-decoration: none;
+    color: orangered;
+}
+#navbar .div2{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 23px;
+    color: orangered;
+}
+#navbar .div2:hover{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 23px;
+    color: white;
+}
+#navbar .div1 a{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+}
+#navbar .div3{
+    font-size: 21px;
+}
+#navbar .div4{
+    font-size: 21px;
+}
+#navbar .div5{
+    font-size: 21px;
+}
+/* <!-- ===============================hero page============================== --> */
+#hero{
+    background-image: url("./game1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    width: 100%;
+}
+#hero .btn{
+    padding-top: 200px;
+    padding-left: 1245px;
+}
+#hero .btn a{
+    border: 3px solid white;
+    padding: 13px 19px 13px 19px;
+    text-decoration: none;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+#hero .btn a:hover{
+    padding: 13px 19px 13px 19px;
+    text-decoration: none;
+    opacity: 0.8;
+}
+/* <!-- ===============================second page============================== --> */
+#second{
+    /* background-image: url("https://www.shutterstock.com/image-vector/abstract-dark-black-geometric-banner-600nw-2476988101.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    height: 45vh;
+    width: 100%;
+    box-shadow: 0px 0px 300px  black inset;
+    color: rgb(49, 46, 46);
+}
+#second article{
+    display: flex;
+    padding: 20px;
+}
+#second article div{
+    margin: 20px;
+}
+#second article div a{
+    text-decoration: none;
+    color: white;
+}
+#second .a1 a{
+    border-radius: 30px;
+    padding: 10px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    border: 1px solid white;
+    margin-left: 40px;
+}
+#second .a1 a:hover{
+    border-radius: 30px;
+    padding: 10px;
+    color: orangered;
+    border: 1px solid orangered;
+}
+#second .a2 a{
+    border-radius: 30px;
+    padding: 10px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    border: 1px solid white;
+}
+#second .a2 a:hover{
+    color: orangered;
+    border: 1px solid orangered;
+    border-radius: 30px;
+    padding: 10px;
+}
+#second .a3 a{
+    border-radius: 30px;
+    padding: 10px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    border: 1px solid white;
+}
+#second .a3 a:hover{
+    color: orangered;
+    border: 1px solid orangered;
+    border-radius: 30px;
+    padding: 10px;
+}
+#second .h1{
+    font-size: 50px;
+    padding-left: 200px;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+#second .icon{
+    margin-left: 1000px;
+    margin-bottom: 705px;
+    font-size: 19px;
+}
+#second .h2{
+    color: white;
+    font-size: 25px;
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    margin-bottom: 700px;
+    margin-left: 100px;
+}
+#second div img{
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+    margin-top: 50px;
+}
+#second .img1{
+    margin-left: -1250px;
+}
+
