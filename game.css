@@ -207,6 +207,39 @@ body{
     }
 
 }
+@media (max-width:321px){
+    #navbar{
+        display: none;
+    }
+    #smallnav{
+        display: flex;
+    }
+    #shownav{
+        width: 200px;
+    }
+    #shownav .div1{
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        color: orangered;
+        padding: 20px;
+    }
+    #shownav div a{
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+    }
+    #shownav div{
+        padding: 27px;
+        margin-left: 10px;
+    }
+    #input1:checked ~ #shownav{
+        left: 0px;
+        transition: left 1s;
+    }
+
+}
 /* <!-- ===============================hero page============================== --> */
 #hero{
     background-image: url("./game1.jpg");
@@ -265,6 +298,20 @@ body{
     #hero .btn a{
         padding: 5px 10px 5px 10px;
         font-size: 10px;
+    }
+}
+@media(max-width:321px){
+    #hero{
+        height: 28vh;
+        width: 100%;
+    }
+    #hero .btn{
+        padding-left: 250px;
+        padding-top: 50px;
+    }
+    #hero .btn a{
+        padding: 5px 10px 5px 10px;
+        font-size: 5px;
     }
 }
 /* <!-- ===============================second page============================== --> */
@@ -456,6 +503,41 @@ body{
     }
 
 }
+@media(max-width:321px){
+    #second .h1{
+        font-size: 10px;
+        padding-left: 30px;
+        margin-top: -10px;
+    }
+    #second .a1 a{
+        margin-left: -30px;
+        font-size: 5px;
+        margin-top: -35px;
+    }
+    #second .a2 a{
+        margin-top: -35px;
+        font-size: 5px;
+    }
+    #second .a3 a{
+        margin-top: -35px;
+        font-size: 5px;
+    }
+    #second .ar1{
+        margin-top: -50px;
+    }
+    #second .h2{
+        margin-top: -30px;
+        margin-left: 20px;
+        /* padding-bottom: -50px; */
+        font-size: 17px;
+    }
+    #second .icon{
+        margin-left: 100px;
+        margin-top: -30px;
+        /* padding-bottom: -50px; */
+    }
+
+}
 /* <!-- ===================================== third page ======================================= --> */
 #third{
     overflow-x: hidden;
@@ -524,6 +606,16 @@ body{
     #third div img{
         height: 300px;
         width: 300px;
+    }
+}
+@media (max-width:321px){
+    #third article{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #third div img{
+        height: 200px;
+        width: 200px;
     }
 }
 /* ============================================footer=============================================== */
@@ -660,6 +752,31 @@ body{
     #footer .p2{
         padding-left: 40px;
         font-size: 15px;
+    }
+    #footer .img{
+        display: none;
+    }
+}
+
+@media (max-width:321px){
+    #footer .h1{
+        padding-left: 30px;
+        font-size: 25px;
+    }
+    #footer .line{
+        padding-left: 30px;
+    }
+    #footer .p1{
+        padding-left: 30px;
+        font-size: 13px;
+    }
+    #footer .h2{
+        padding-left: 30px;
+        font-size: 25px;
+    }
+    #footer .p2{
+        padding-left: 30px;
+        font-size: 13px;
     }
     #footer .img{
         display: none;

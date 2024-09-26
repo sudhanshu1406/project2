@@ -379,6 +379,43 @@
         font-size: 10px;
     }
 }
+@media (max-width:321px){
+    #hero{
+        height: 30vh;
+    }
+    #hero .p2{
+        font-size: 8px;
+        margin-left: 20px;
+    }
+    #hero .p1{
+        margin-left: 20px;
+        margin-top: -40px;
+        font-size: 10px;
+    }
+    #hero .img1{
+        margin-top: -230px;
+        margin-left: -70px;
+    }
+    #hero .btn{
+        margin-top: 30px;
+        font-size: 8px;
+        margin-left: 20px;
+    }
+    #hero .btn2{
+        margin-top: -15px;
+        font-size: 6px;
+        margin-left: 150px;
+    }
+    #hero .h1{
+        margin-top: 40px;
+        font-size: 5px;
+        display: none;
+    }
+    #hero .h2{
+        font-size: 9px;
+        display: none;
+    }
+}
 /* <!-- ====================second page====================== --> */
 #second{
     background-color: black;
@@ -706,6 +743,27 @@
         margin-top: 58px;
     }
 }
+@media(max-width:321px){
+    #second{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #second .ar1 .in1 .div1{
+        margin-top: 70px;
+    }
+    #second .ar2 .in2 .div1{
+        margin-top: 70px;
+    }
+    #second .ar3 .in3 .div1{
+        margin-top: 57px;
+    }
+    #second .ar4 .in4 .div1{
+        margin-top: 70px;
+    }
+    #second .ar5 .in5 .div1{
+        margin-top: 58px;
+    }
+}
 /* ===============fifth image============ */
 /* <!-- ====================second page====================== --> */
 
@@ -804,6 +862,30 @@
         margin-left: 160px;
     }
 }
+@media(max-width:321px){
+    #third{
+        display: block;
+        padding-left: 10%;
+    }
+    #third .img img{
+        height: 100px;
+        padding-left: -80px;
+    }
+    #third .btn{
+        font-size: 8px;
+    }
+    #third .btn2{
+        font-size: 8px;
+        margin-left: 115px;
+        margin-top: -13px;
+    }
+    #third .h1{
+        margin-top: -50px;
+    }
+    #third .h2{
+        margin-top: -5px;
+    }
+}
 /* <!-- ====================third page====================== --> */
 /* =========================forth page with slider================ */
 #h1{
@@ -898,6 +980,14 @@
     #inner div img{
         height: 300px;
         width: 1515px;
+    }
+}
+@media (max-width:321px){
+    #h1{
+        padding-left: 0px;
+    }
+    #h2{
+        padding-left: 0px;
     }
 }
 
@@ -1050,6 +1140,18 @@
     }
     #fotter .btn{
         padding-left: 170px;
+    } 
+ }
+ @media (max-width:321px){
+    #infotter{
+     display: grid;
+     grid-template-columns: auto auto;
+    }
+    #fotter .img img{
+        margin-left: -600px;
+    }
+    #fotter .btn{
+        padding-left: 120px;
     } 
  }
 /* =====================fotter page================= */
