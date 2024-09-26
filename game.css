@@ -2,6 +2,55 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    overflow-x: hidden;
+}
+
+#smallnav .div2{
+    color: white;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+}
+#smallnav .div1{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: orangered;
+}
+#smallnav .div1:hover{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+}
+#smallnav{
+    background-color: rgb(24, 25, 25);
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    display: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+#shownav{
+    height: 100vh;
+    width: 300px;
+    background-color: rgb(24, 25, 25);
+    position: absolute;
+    top: 0px;
+    left: -300px;
+    z-index: 20;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
 /* <!-- ===============================navbar============================== --> */
 #navbar{
     display: flex;
@@ -9,6 +58,8 @@
     position: sticky;
     top: 0px;
     justify-content: space-between;
+    z-index: 20;
+    overflow-x: hidden;
 }
 #navbar article{
     display: flex;
@@ -55,6 +106,107 @@
 #navbar .div5{
     font-size: 21px;
 }
+
+@media (max-width:1025px){
+    #navbar{
+        display: none;
+    }
+    #smallnav{
+        display: flex;
+    }
+    #shownav{
+        height: 100vh;
+        width: 270px;
+    }
+    #shownav .div1{
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 27px;
+        color: orangered;
+        padding: 30px;
+    }
+    #shownav div a{
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+    }
+    #shownav div{
+        padding: 40px;
+        margin-left: 10px;
+    }
+    #input1:checked ~ #shownav{
+        left: 0px;
+        transition: left 1s;
+    }
+
+}
+@media (max-width:769px){
+    #navbar{
+        display: none;
+    }
+    #smallnav{
+        display: flex;
+    }
+    #shownav{
+        width: 200px;
+    }
+    #shownav .div1{
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        color: orangered;
+        padding: 20px;
+    }
+    #shownav div a{
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+    }
+    #shownav div{
+        padding: 27px;
+        margin-left: 10px;
+    }
+    #input1:checked ~ #shownav{
+        left: 0px;
+        transition: left 1s;
+    }
+
+}
+@media (max-width:431px){
+    #navbar{
+        display: none;
+    }
+    #smallnav{
+        display: flex;
+    }
+    #shownav{
+        width: 200px;
+    }
+    #shownav .div1{
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        color: orangered;
+        padding: 20px;
+    }
+    #shownav div a{
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+    }
+    #shownav div{
+        padding: 27px;
+        margin-left: 10px;
+    }
+    #input1:checked ~ #shownav{
+        left: 0px;
+        transition: left 1s;
+    }
+
+}
 /* <!-- ===============================hero page============================== --> */
 #hero{
     background-image: url("./game1.jpg");
@@ -62,6 +214,7 @@
     background-size: cover;
     height: 95vh;
     width: 100%;
+    overflow-x: hidden;
 }
 #hero .btn{
     padding-top: 200px;
@@ -81,15 +234,46 @@
     text-decoration: none;
     opacity: 0.8;
 }
+@media(max-width:1025px){
+    #hero{
+        height: 67vh;
+        width: 100%;
+    }
+    #hero .btn{
+        padding-left: 850px;
+    }
+}
+@media(max-width:769px){
+    #hero{
+        height: 67vh;
+        width: 100%;
+    }
+    #hero .btn{
+        padding-left: 600px;
+        padding-top: 120px;
+    }
+}
+@media(max-width:431px){
+    #hero{
+        height: 37vh;
+        width: 100%;
+    }
+    #hero .btn{
+        padding-left: 330px;
+        padding-top: 70px;
+    }
+    #hero .btn a{
+        padding: 5px 10px 5px 10px;
+        font-size: 10px;
+    }
+}
 /* <!-- ===============================second page============================== --> */
 #second{
-    /* background-image: url("https://www.shutterstock.com/image-vector/abstract-dark-black-geometric-banner-600nw-2476988101.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; */
-    height: 45vh;
-    width: 100%;
+    /* height: 45vh;
+    width: 100%; */
     box-shadow: 0px 0px 300px  black inset;
-    color: rgb(49, 46, 46);
+    background-color: rgb(49, 46, 46);
+    overflow-x: hidden;
 }
 #second article{
     display: flex;
@@ -110,6 +294,7 @@
     font-style: normal;
     border: 1px solid white;
     margin-left: 40px;
+    background-color: black;
 }
 #second .a1 a:hover{
     border-radius: 30px;
@@ -124,6 +309,7 @@
     font-weight: 700;
     font-style: normal;
     border: 1px solid white;
+    background-color: black;
 }
 #second .a2 a:hover{
     color: orangered;
@@ -138,6 +324,7 @@
     font-weight: 700;
     font-style: normal;
     border: 1px solid white;
+    background-color: black;
 }
 #second .a3 a:hover{
     color: orangered;
@@ -155,7 +342,6 @@
 }
 #second .icon{
     margin-left: 1000px;
-    margin-bottom: 705px;
     font-size: 19px;
 }
 #second .h2{
@@ -163,16 +349,319 @@
     font-size: 25px;
     font-family: "Ubuntu", sans-serif;
     font-style: normal;
-    margin-bottom: 700px;
     margin-left: 100px;
 }
-#second div img{
-    height: 400px;
-    width: 400px;
-    margin: 20px;
-    margin-top: 50px;
+@media(max-width:1025px){
+    #second .h1{
+        font-size: 30px;
+        padding-left: 120px;
+        margin-top: -10px;
+    }
+    #second .a1 a{
+        margin-left: -10px;
+        font-size: 13px;
+        margin-top: -35px;
+    }
+    #second .a2 a{
+        margin-top: -35px;
+        font-size: 13px;
+    }
+    #second .a3 a{
+        margin-top: -35px;
+        font-size: 13px;
+    }
+    #second .ar1{
+        margin-top: -50px;
+    }
+    #second .h2{
+        margin-top: -40px;
+        margin-left: 100px;
+        padding-bottom: -50px;
+    }
+    #second .icon{
+        margin-left: 500px;
+        margin-top: -40px;
+        padding-bottom: -50px;
+    }
+
 }
-#second .img1{
-    margin-left: -1250px;
+@media(max-width:769px){
+    #second .h1{
+        font-size: 20px;
+        padding-left: 120px;
+        margin-top: -10px;
+    }
+    #second .a1 a{
+        margin-left: -10px;
+        font-size: 10px;
+        margin-top: -35px;
+    }
+    #second .a2 a{
+        margin-top: -35px;
+        font-size: 10px;
+    }
+    #second .a3 a{
+        margin-top: -35px;
+        font-size: 10px;
+    }
+    #second .ar1{
+        margin-top: -50px;
+    }
+    #second .h2{
+        margin-top: -35px;
+        margin-left: 90px;
+        /* padding-bottom: -50px; */
+        font-size: 18px;
+    }
+    #second .icon{
+        margin-left: 500px;
+        margin-top: -35px;
+        /* padding-bottom: -50px; */
+    }
+
 }
 
+@media(max-width:431px){
+    #second .h1{
+        font-size: 10px;
+        padding-left: 80px;
+        margin-top: -10px;
+    }
+    #second .a1 a{
+        margin-left: -10px;
+        font-size: 8px;
+        margin-top: -35px;
+    }
+    #second .a2 a{
+        margin-top: -35px;
+        font-size: 8px;
+    }
+    #second .a3 a{
+        margin-top: -35px;
+        font-size: 8px;
+    }
+    #second .ar1{
+        margin-top: -50px;
+    }
+    #second .h2{
+        margin-top: -30px;
+        margin-left: 80px;
+        /* padding-bottom: -50px; */
+        font-size: 17px;
+    }
+    #second .icon{
+        margin-left: 100px;
+        margin-top: -30px;
+        /* padding-bottom: -50px; */
+    }
+
+}
+/* <!-- ===================================== third page ======================================= --> */
+#third{
+    overflow-x: hidden;
+}
+#third article{
+    display: flex;
+    box-shadow: 0px 0px 300px  black inset;
+    background-color: rgb(49, 46, 46);
+    overflow-x: hidden;
+}
+#third .ar1{
+    box-shadow: 0px 0px 300px  black inset;
+}
+#third div img{
+    height: 400px;
+    width: 400px;
+    padding: 20px 30px 50px 63px;
+}
+#third .name1 a{
+    color: white;
+    margin: 5px;
+    font-size: 23px;
+}
+#third .name1{
+    color: white;
+    font-size: 21px;
+    padding-left: 100px;
+}
+#third .name2 a{
+    color: white;
+    margin: 5px;
+    font-size: 23px;
+}
+#third .name2{
+    color: white;
+    font-size: 21px;
+    padding-left: 100px;
+}
+#third .name3 a{
+    color: white;
+    margin: 5px;
+    font-size: 23px;
+}
+#third .name3{
+    color: white;
+    font-size: 21px;
+    padding-left: 100px;
+}
+@media (max-width:1025px){
+    #third article{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+@media (max-width:769px){
+    #third article{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+@media (max-width:431px){
+    #third article{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #third div img{
+        height: 300px;
+        width: 300px;
+    }
+}
+/* ============================================footer=============================================== */
+#footer{
+    background-color: rgb(49, 46, 46);
+    box-shadow: 0px 0px 300px  black inset;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    overflow-x: hidden;
+}
+#footer .h1{
+    font-size: 40px;
+    color: white;
+    padding-left: 200px;
+    z-index: 5;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+#footer .line{
+    font-size: 40px;
+    color: orangered;
+    padding-left: 200px;
+    z-index: 5;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+#footer .p1{
+    color: white;
+    padding-left: 200px;
+    padding-top: 20px;
+    font-size: 16px;
+    z-index: 5;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#footer .h2{
+    color: white;
+    font-size: 40px;
+    padding-left: 200px;
+    padding-top: 30px;
+    z-index: 5;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+#footer .p2{
+    color: white;
+    padding-left: 200px;
+    padding-top: 10px;
+    z-index: 5;
+    font-size: 16px;
+    z-index: 5;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#footer .p2 a{
+    text-decoration: none;
+    color: orangered;
+}
+#footer .img{
+    padding-left: 930px;
+    margin-top: -445px;
+    z-index: 10;
+}
+
+@media (max-width:1025px){
+    #footer .h1{
+        padding-left: 80px;
+        font-size: 30px;
+    }
+    #footer .line{
+        padding-left: 80px;
+    }
+    #footer .p1{
+        padding-left: 80px;
+        font-size: 17px;
+    }
+    #footer .h2{
+        padding-left: 80px;
+        font-size: 30px;
+    }
+    #footer .p2{
+        padding-left: 80px;
+        font-size: 17px;
+    }
+    #footer .img{
+        display: none;
+    }
+}
+@media (max-width:789px){
+    #footer .h1{
+        padding-left: 80px;
+        font-size: 27px;
+    }
+    #footer .line{
+        padding-left: 80px;
+    }
+    #footer .p1{
+        padding-left: 80px;
+        font-size: 15px;
+    }
+    #footer .h2{
+        padding-left: 80px;
+        font-size: 27px;
+    }
+    #footer .p2{
+        padding-left: 80px;
+        font-size: 15px;
+    }
+    #footer .img{
+        display: none;
+    }
+}
+@media (max-width:431px){
+    #footer .h1{
+        padding-left: 40px;
+        font-size: 30px;
+    }
+    #footer .line{
+        padding-left: 40px;
+    }
+    #footer .p1{
+        padding-left: 40px;
+        font-size: 15px;
+    }
+    #footer .h2{
+        padding-left: 40px;
+        font-size: 30px;
+    }
+    #footer .p2{
+        padding-left: 40px;
+        font-size: 15px;
+    }
+    #footer .img{
+        display: none;
+    }
+}

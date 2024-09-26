@@ -14,6 +14,28 @@
     <link href="./game.css" rel="stylesheet">
   </head>
   <body>
+    <script src="./game.js"></script>
+
+    <input type="checkbox" id="input1" hidden>
+    <section id="smallnav">
+      <div class="div1"><i class="fa-solid fa-dragon"></i> Crunchyroll</div>
+      <div class="div2"><label for="input1"><i class="fa-solid fa-bars"></i></label></div>
+    </section>
+
+
+    <section id="shownav">
+      <div class="div1"><i class="fa-solid fa-dragon"></i> Crunchyroll</div>
+      <div><a href="#">Browse</a></div>
+      <div><a href="game.html">Games</a></div>
+      <div><a href="login.html">Log In</a></div>
+      <div>
+        <a href="#"
+          ><i id="icon" class="fa-solid fa-crown"></i> Try Free Premium</a>
+      </div>
+      <div><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+      <div><a href="#"><i class="fa-regular fa-bookmark"></i></a></div>
+      <div><a href="#"><i class="fa-solid fa-user-tie"></i></a></div>
+    </section>
     <!-- ===============================navbar============================== -->
     <section id="navbar">
       <article>
@@ -24,7 +46,7 @@
       </article>
       <article>
         <div class="div3">
-            <a href="./index.css"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="./index.html"><i class="fa-solid fa-magnifying-glass"></i></a>
           </div>
           <div class="div4">
             <a href="#"><i class="fa-regular fa-bookmark"></i></a>
@@ -43,7 +65,7 @@
         <article>
             <div class="h1">Anime meets Arcade at Crunchyroll Games!</div>
         </article>
-        <article>
+        <article class="ar1">
             <div class="a1"><a href="#">ALL</a></div>
             <div class="a2"><a href="#">FREE TO PLAY</a></div>
             <div class="a3"><a href="#"><i class="fa-solid fa-crown"></i> CRUNCHROLL GAME VAULT</a></div>
@@ -52,13 +74,41 @@
             <div class="h2">Newest Games</div>
             <div class="icon"><a href="#"><i class="fa-solid fa-filter"></i> Filter</a></div>
      </section>
-
-     <section>
+<!-- ===================================== third page ======================================= -->
+     <section id="third">
         <article>
-          <div class="img1"><img src="./game2.jpeg" alt=""></div>
-          <div class="img2"><img src="./game3.jpg" alt=""></div>
-          <div class="img3"><img src="./game4.jpg" alt=""></div>
+          <div><img id="img1" onmouseover="zoomin()" onmouseleave="initial()" src="./game2.jpeg" alt=""><br><div class="name1">Lord Of Nazarick 
+            <br> <a href="#"><i class="fa-brands fa-apple"></i></a>
+            <a href="#"><i class="fa-brands fa-google-play"></i></a>
+            <a href="#"><i class="fa-brands fa-windows"></i></a></div>
+          </div>
+
+          <div><img id="img2" onmouseover="zoomin()" onmouseleave="initial()" src="./game3.jpg" alt=""><br><div class="name2">RWBY: Arrowfell 
+            <br> <a href="#"><i class="fa-brands fa-apple"></i></a> 
+            <a href="#"><i class="fa-brands fa-google-play"></i></a> 
+            <a href="#"><i class="fa-brands fa-windows"></i></a></div>
+          </div>
+
+          <div><img id="img3" onmouseover="zoomin()" onmouseleave="initial()" src="./game4.jpg" alt=""><br><div class="name3">Spidersauras 
+            <br> <a href="#"><i class="fa-brands fa-apple"></i></a> 
+            <a href="#"><i class="fa-brands fa-google-play"></i></a> 
+            <a href="#"><i class="fa-brands fa-windows"></i></a></div>
+          </div>
+
         </article>
+        <article class="ar1">
+        </article>
+     </section>
+     <!--=================================== footer ==========================================  -->
+     <section id="footer">
+      <article>
+        <div class="h1">About Us</div>
+        <div class="line">____________________________________________________</div>
+        <div class="p1">Crunchyroll Games is a game publisher working to bring amazing anime-based mobile games to anime and<br> video games fans around the world.<br>We have collaborated with major influencers like Hololive EN, Nijisanji EN, Trashtaste, and more.</div>
+        <div class="h2">Partner With Us</div>
+        <div class="p2">For information related to partnership with Crunchyroll Games, please contact <a href="#">gamesbd@crunchyroll.com.</a></div>
+      </article>
+      <img class="img" src="./girl2.png" alt="">
      </section>
   </body>
 </html>

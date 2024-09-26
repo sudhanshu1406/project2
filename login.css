@@ -15,6 +15,7 @@ body{
     z-index: 20;
     display: flex;
     padding: 20px;
+    overflow-x: hidden;
 }
 .navbar article{
     display: flex;
@@ -44,6 +45,21 @@ body{
     font-size: 23px;
     color: white;
 }
+@media (max-width:1025px){
+    .navbar .div1{
+        margin-left: 390px;
+    }
+}
+@media (max-width:769px){
+    .navbar .div1{
+        margin-left: 280px;
+    }
+}
+@media (max-width:431px){
+    .navbar .div1{
+        margin-left: 90px;
+    }
+}
 
 /* ===========================hero====================== */
 
@@ -54,11 +70,12 @@ body{
     align-items: center;
     height: 130vh;
     width: 100%;
+    overflow-x: hidden;
 }
 #hero .h1{
     color: white;
     font-size: 40px;
-    padding-left: 610px;
+    margin-left: 610px;
     padding-top: 120px;
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
@@ -82,6 +99,7 @@ body{
     font-family: "Kanit", sans-serif;
     font-weight: 350;
     font-style: normal;
+    overflow-x: hidden;
 }
 #hero .form .info1{
     padding-top: 40px;
@@ -180,4 +198,121 @@ body{
     padding: 30px 0px 0px 85px;
     opacity: 0.5;
     font-size: 20px;
+}
+
+@media (max-width:1025px){
+    #hero .h1{
+        margin-left: 390px;
+    }
+    #hero .form{
+        margin-left: 265px;
+        margin-right: 200px;
+    }
+    #hero .img{
+        margin-left: 130px;
+    }
+    #hero .img1{
+        margin-left: 668px;
+    }
+    #hero .btn{
+        margin-left: 490px;
+    }
+    #hero .text{
+        margin-left: 420px;
+    }
+    #hero .text2{
+        margin-left: 360px;
+    }
+    #hero .line{
+        margin-left: 50px;
+        font-size: 35px;
+    }
+}
+
+@media (max-width:769px){
+    #hero .h1{
+        margin-left: 280px;
+        font-size: 30px;
+    }
+    #hero .form{
+        margin-left: 165px;
+        margin-right: 100px;
+    }
+    #hero .form .h2{
+        font-size: 17px;
+        padding-top: 5px;
+    }
+    #hero .form .info2{
+        font-size: 14px;
+    }
+    #hero .img{
+        margin-left: 30px;
+    }
+    #hero .img1{
+        padding-top: 20px;
+        margin-left: 509px;
+    }
+    #hero .btn{
+        margin-left: 360px;
+    }
+    #hero .text{
+        margin-left: 280px;
+    }
+    #hero .text2{
+        margin-left: 230px;
+    }
+    #hero .line{
+        margin-left: 37px;
+        font-size: 27px;
+    }
+}
+
+@media (max-width:431px){
+    #hero .h1{
+        margin-left: 125px;
+        font-size: 28px;
+    }
+    #hero .form{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #hero .form .h2{
+        font-size: 15px;
+        padding-top: 0px;
+    }
+    #hero .form .info1{
+        padding-top: 40px;
+        padding-left: 80px;
+    }
+    #hero .form .info2{
+        font-size: 10.5px;
+    }
+    #hero .form .info2 input{
+        width: 10px;
+        height: 10px;
+    }
+    #hero .img{
+        display: none;
+    }
+    #hero .img1{
+        display: none;
+    }
+    #hero .btn{
+        margin-left: 170px;
+        margin-top: 50px;
+    }
+    #hero .text{
+        margin-left: 100px;
+    }
+    #hero .text2{
+        margin-left: 40px;
+    }
+    #hero .line{
+        margin-left: 0px;
+        font-size: 27px;
+    }
+    #hero .last{
+        font-size: 15px;
+        margin-left: 0px;
+    }
 }

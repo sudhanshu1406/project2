@@ -7,7 +7,52 @@
 /* body{
     overflow-x: hidden;
 } */
-
+#smallnav .div2{
+    color: white;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+}
+#smallnav .div1{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: orangered;
+}
+#smallnav .div1:hover{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+}
+#smallnav{
+    background-color: rgb(24, 25, 25);
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    display: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+#shownav{
+    height: 100vh;
+    width: 300px;
+    background-color: rgb(24, 25, 25);
+    position: absolute;
+    top: 0px;
+    left: -300px;
+    z-index: 20;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+/* ===========================side navbar============================= */
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -19,6 +64,7 @@
     font-family: "Kanit", sans-serif;
     font-weight: 350;
     font-style: normal;
+    overflow-x: hidden;
 }
 .navbar article{
     display: flex;
@@ -86,6 +132,107 @@
 .navbar .div8{
     padding-top: 10px;
 }
+
+@media (max-width:1025px){
+    .navbar{
+        display: none;
+    }
+    #smallnav{
+        display: flex;
+    }
+    #shownav{
+        height: 100vh;
+        width: 270px;
+    }
+    #shownav .div1{
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 27px;
+        color: orangered;
+        padding: 30px;
+    }
+    #shownav div a{
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+    }
+    #shownav div{
+        padding: 40px;
+        margin-left: 10px;
+    }
+    #input1:checked ~ #shownav{
+        left: 0px;
+        transition: left 1s;
+    }
+
+}
+@media (max-width:769px){
+    .navbar{
+        display: none;
+    }
+    #smallnav{
+        display: flex;
+    }
+    #shownav{
+        width: 200px;
+    }
+    #shownav .div1{
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        color: orangered;
+        padding: 20px;
+    }
+    #shownav div a{
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+    }
+    #shownav div{
+        padding: 27px;
+        margin-left: 10px;
+    }
+    #input1:checked ~ #shownav{
+        left: 0px;
+        transition: left 1s;
+    }
+
+}
+@media (max-width:431px){
+    .navbar{
+        display: none;
+    }
+    #smallnav{
+        display: flex;
+    }
+    #shownav{
+        width: 200px;
+    }
+    #shownav .div1{
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        color: orangered;
+        padding: 20px;
+    }
+    #shownav div a{
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+    }
+    #shownav div{
+        padding: 27px;
+        margin-left: 10px;
+    }
+    #input1:checked ~ #shownav{
+        left: 0px;
+        transition: left 1s;
+    }
+
+}
 /* <!--==================hero page =====================  --> */
 
 #hero{
@@ -93,11 +240,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
-    height: 100vh;
-    width: 100%;
+    height: 110vh;
+    /* width: 100%; */
     font-family: "Kanit", sans-serif;
     font-weight: 350;
     font-style: normal;
+    overflow-x: hidden;
 }
 #hero .img1{
     padding-top: 200px;
@@ -168,6 +316,69 @@
     font-weight: 350;
     font-style: normal;
 }
+@media (max-width:1025px){
+    #hero{
+        height: 60vh;
+    }
+    #hero .p2{
+        font-size: 15px;
+    }
+    #hero .img1{
+        margin-top: -200px;
+    }
+    #hero .h1,.h2{
+        margin-top: 80px;
+    }
+}
+@media (max-width:769px){
+    #hero{
+        height: 60vh;
+    }
+    #hero .p2{
+        font-size: 12px;
+    }
+    #hero .img1{
+        margin-top: -200px;
+    }
+    #hero .btn{
+        margin-top: 30px;
+    }
+    #hero .btn2{
+        margin-top: -24px;
+    }
+    #hero .h1{
+        margin-top: 40px;
+        font-size: 20px;
+    }
+    #hero .h2{
+        font-size: 17px;
+    }
+}
+@media (max-width:431px){
+    #hero{
+        height: 30vh;
+    }
+    #hero .p2{
+        font-size: 10px;
+    }
+    #hero .img1{
+        margin-top: -200px;
+
+    }
+    #hero .btn{
+        margin-top: 30px;
+    }
+    #hero .btn2{
+        margin-top: -24px;
+    }
+    #hero .h1{
+        margin-top: 40px;
+        font-size: 10px;
+    }
+    #hero .h2{
+        font-size: 10px;
+    }
+}
 /* <!-- ====================second page====================== --> */
 #second{
     background-color: black;
@@ -175,6 +386,7 @@
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     align-items: center;
+    overflow-x: hidden;
 }
 #second {
     padding: 100px 0px 130px 25px;
@@ -189,6 +401,7 @@
     height: 390px;
     width: 270px;
     box-shadow: 0px 0px 10px 1px white;
+    margin: 10px;
 }
 
 #second .ar1 .in1{
@@ -239,6 +452,7 @@
     height: 390px;
     width: 270px;
     box-shadow: 0px 0px 10px 1px white;
+    margin: 10px;
 }
 #second .ar2 .in2{
     background-color: black;
@@ -288,6 +502,7 @@
     height: 390px;
     width: 270px;
     box-shadow: 0px 0px 10px 1px white;
+    margin: 10px;
 }
 #second .ar3 .in3{
     background-color: black;
@@ -337,6 +552,7 @@
     height: 390px;
     width: 270px;
     box-shadow: 0px 0px 10px 1px white;
+    margin: 10px;
 }
 #second .ar4 .in4{
     background-color: black;
@@ -385,6 +601,7 @@
     height: 390px;
     width: 270px;
     box-shadow: 0px 0px 10px 1px white;
+    margin: 10px;
 }
 #second .ar5 .in5{
     background-color: black;
@@ -422,6 +639,73 @@
 #second .ar5 .in5 .div1{
     margin-top: 137px;
 }
+
+
+@media(max-width:1025px){
+    #second{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    #second .ar1 .in1 .div1{
+        margin-top: 70px;
+    }
+    #second .ar2 .in2 .div1{
+        margin-top: 70px;
+    }
+    #second .ar3 .in3 .div1{
+        margin-top: 57px;
+    }
+    #second .ar4 .in4 .div1{
+        margin-top: 70px;
+    }
+    #second .ar5 .in5 .div1{
+        margin-top: 58px;
+    }
+}
+
+@media(max-width:769px){
+    #second{
+        display: grid;
+        grid-template-columns:  auto auto;
+    }
+    #second .ar1 .in1 .div1{
+        margin-top: 70px;
+    }
+    #second .ar2 .in2 .div1{
+        margin-top: 70px;
+    }
+    #second .ar3 .in3 .div1{
+        margin-top: 57px;
+    }
+    #second .ar4 .in4 .div1{
+        margin-top: 70px;
+    }
+    #second .ar5 .in5 .div1{
+        margin-top: 58px;
+    }
+}
+
+@media(max-width:431px){
+    #second{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #second .ar1 .in1 .div1{
+        margin-top: 70px;
+    }
+    #second .ar2 .in2 .div1{
+        margin-top: 70px;
+    }
+    #second .ar3 .in3 .div1{
+        margin-top: 57px;
+    }
+    #second .ar4 .in4 .div1{
+        margin-top: 70px;
+    }
+    #second .ar5 .in5 .div1{
+        margin-top: 58px;
+    }
+}
 /* ===============fifth image============ */
 /* <!-- ====================second page====================== --> */
 
@@ -432,6 +716,7 @@
     color: white;  
     padding: 0px 0px 100px 0px;
     justify-content: space-evenly;  
+    overflow-x: hidden;
 }
 #third .ar1{
     padding-left: 60px;
@@ -474,6 +759,10 @@
     margin-left: 220px;
     margin-top: -24px;
 }
+
+#third .img img{
+    height: 370px;
+}
 #third .btn2 a{
     border: 2px solid orangered;
     padding: 8px 12px 8px 12px;
@@ -485,6 +774,35 @@
     padding: 8px 12px 8px 12px;
     text-decoration: none;
     color:  rgb(231, 99, 52);
+}
+
+@media(max-width:1025px){
+    #third{
+        display: block;
+        padding-left: 10%;
+    }
+}
+
+@media(max-width:769px){
+    #third{
+        display: block;
+        padding-left: 10%;
+    }
+    #third .img img{
+        height: 270px;
+    }
+}
+@media(max-width:431px){
+    #third{
+        display: block;
+        padding-left: 10%;
+    }
+    #third .img img{
+        height: 170px;
+    }
+    #third .btn2{
+        margin-left: 160px;
+    }
 }
 /* <!-- ====================third page====================== --> */
 /* =========================forth page with slider================ */
@@ -508,9 +826,10 @@
 }
 
 #forth{
-    /* overflow-x: hidden; */
-    width: 1600px;
+    overflow-x: hidden;
+    width: 100%;
     padding-top: 30px;
+    background-color: black;
 }
 #inner{
     display: inline-flex;
@@ -518,9 +837,6 @@
     animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
-}
-#forth{
-    background-color: black;
 }
 #inner div img{
     height: 400px;
@@ -571,15 +887,30 @@
     }
 }
 
+@media (max-width:1025px){
+    #inner div img{
+        height: 300px;
+        width: 1500px;
+    }
+}
+
+@media (max-width:769px){
+    #inner div img{
+        height: 300px;
+        width: 1515px;
+    }
+}
+
 /* =================fifth page==================== */
 #fotter{
     background-color: black;
     font-family: "Kanit", sans-serif;
     font-weight: 350;
     font-style: normal;
+    overflow-x: hidden;
 }
 #fotter .img{
-    padding-left: 630px;
+    margin-left: 630px;
 }
 #fotter .p1{
     color: white;
@@ -609,22 +940,35 @@
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 100px;
+    margin: 20px;
 }
 #infotter .h1{
     color: white;
     font-size: 19px;
+    background-color: black;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
 }
 #infotter .h2{
     color: white;
     font-size: 19px;
+    background-color: black;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
 }
 #infotter .h3{
     color: white;
     font-size: 19px;
+    background-color: black;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
 }
 #infotter .h4{
     color: white;
     font-size: 19px;
+    background-color: black;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
 }
 #fotter #infotter article div{
     margin: 10px;
@@ -667,4 +1011,46 @@
     opacity: 0.5;
     font-size: 20px;
 }
+
+@media (max-width:1025px){
+   #infotter{
+    display: grid;
+    grid-template-columns: auto auto;
+   }
+   #fotter .img img{
+    margin-left: -260px;
+   }
+    #fotter .btn{
+    padding-left: 460px;
+    } 
+    .line{
+        font-size: 35px;
+        margin-left: 10px;
+    }
+}
+@media (max-width:769px){
+    #infotter{
+     display: grid;
+     grid-template-columns: auto auto;
+    }
+    #fotter .img img{
+        margin-left: -370px;
+    }
+    #fotter .btn{
+        padding-left: 340px;
+    } 
+ }
+ @media (max-width:431px){
+    #infotter{
+     display: grid;
+     grid-template-columns: auto auto;
+    }
+    #fotter .img img{
+        margin-left: -540px;
+    }
+    #fotter .btn{
+        padding-left: 170px;
+    } 
+ }
 /* =====================fotter page================= */
+
