@@ -60,7 +60,7 @@ body{
         margin-left: 90px;
     }
 }
-@media (max-width:321px){
+@media (max-width:390px){
     .navbar .div1{
         margin-left: 90px;
         font-size: 20px;
@@ -323,7 +323,7 @@ body{
     }
 }
 
-@media (max-width:321px){
+@media (max-width:390px){
     #hero .h1{
         margin-left: 60px;
         font-size: 28px;
